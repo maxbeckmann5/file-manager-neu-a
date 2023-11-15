@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>file-manager</title>
+    <link rel="stylesheet" href="../../styles.scss">
+</head>
+<body>
+    <div class="box-menu">
+        <div class="nav-bar">
+            <nav>
+                <ul>
+                    <li>
+                        <button class="logout" id="team">Teams</button>
+                    </li>
+                    <li id="arrow"><img src="../assets/images/Vector 1.png"></li>
+                    <li>
+                        <button class="logout" id="team">Team 1</button>
+                    </li>
+                </ul>
+            </nav>
+            <div class="logout-img">
+                    <img src="../assets/images/logout.png" id="logout">
+                <div>
+                    Logout
+                </div>
+            </div>
+        </div>
+        <div class="nav-bar" id="search">
+            <nav style="flex:2;">
+                <ul>
+                    <li id="search-input">
+                        <div id="search-box">
+                            <img src="../assets/images/search.png" id="search-img">
+                            <input type="text" placeholder="Search">
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div id="container">
+                <div id="column" class="button">
+                    <div><img src="../assets/images/refresh.png"></div>
+                    <div>refresh</div>
+                </div>
+                <div id="column" class="button">
+                    <div><img src="../assets/images/new-folder.png"></div>
+                    <div>new folder</div>
+                </div>
+                <div id="column" class="button">
+                    <div><img src="../assets/images/share.png"></div>
+                    <div>share</div>
+                </div>
+                <div id="column" class="button">
+                    <div><img src="../assets/images/upload.png"></div>
+                    <div>upload</div>
+                </div>
+            </div>
+        </div>
+        <div class="horizontal-line"></div>
+        <div class="table-box" id="table">
+            <table class="file-table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>name</th>
+                        <th></th>
+                        <th>size</th>
+                        <th></th>
+                        <th>last modified</th>
+                        <th></th>
+                        <th>type</th>
+                    </tr>
+                    <tr class="file-table-leer"></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>file1.pdf</td>
+                        <td></td>
+                        <td>100KB</td>
+                        <td></td>
+                        <td>13.07.2023</td>
+                        <td></td>
+                        <td>PDF-Document</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>file2.pdf</td>
+                        <td></td>
+                        <td>30KB</td>
+                        <td></td>
+                        <td>20.05.2023</td>
+                        <td></td>
+                        <td>PDF-Dokument</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>folder1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>07.08.2023</td>
+                        <td></td>
+                        <td>Folder</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
